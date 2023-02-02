@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Liquid from "../../public/assets/backgroundLiquid.gif";
+import NavBarComponent from "../components/navBar.component";
 
 export default function Home() {
   return (
@@ -12,20 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="bg-white z-0 w-screen h-screen">
-          <Image
-            className="blur-2xl"
-            src={Liquid}
-            alt="Liquid"
-            fill
-            quality={100}
-            style={{
-              position: "absolute",
-              top: "0",
-              left: "0",
-            }}
-          />
-        </div>
+        <NavBarComponent />
       </main>
     </>
   );
